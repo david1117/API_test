@@ -1,0 +1,13 @@
+const axios = require("axios");
+
+const headers = {
+    "Authorization": "Bearer [API Key]"
+};
+
+axios.get("https://api.example.com", { headers: headers })
+  .then(response => {
+    // handle success
+  })
+  .catch(error => {
+    // handle error
+  });
