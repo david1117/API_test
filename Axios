@@ -1,13 +1,10 @@
-const axios = require("axios");
+import requests
 
-const headers = {
-    "Authorization": "Bearer [API Key]"
-};
+headers = {
+    "Authorization": "Bearer [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]",
+    "Content-Type": "application/json"
+}
 
-axios.get("https://api.example.com", { headers: headers })
-  .then(response => {
-    // handle success
-  })
-  .catch(error => {
-    // handle error
-  });
+response = requests.get("https://api.openai.com/v1/images/generations", headers=headers)
+
+print(response.text)
